@@ -60,15 +60,3 @@ FROM staging.joined_table j
 JOIN staging.status s ON j.order_status = s.order_status
 -- ORDER BY j.order_status DESC;
 ORDER BY j.order_status ASC;
-
-/*  ==================
-    Invetigate unique
-    cusomers
-    ================= */
-
--- DISTINCT
-
-SELECT DISTINCT order_id
-FROM staging.joined_table
-ORDER BY order_id DESC;
-
